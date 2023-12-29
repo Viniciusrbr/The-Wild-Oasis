@@ -7,7 +7,21 @@ export async function getCabins() {
 
     if (error) {
         console.log(error)
-        throw new Error("Cabins could not be loaded");
+        throw new Error("Não foi possível carregar as cabines");
+    }
+
+    return data;
+}
+
+export async function deleteCabin(id) {
+    const { data, error } = await supabase
+        .from('cabins')
+        .delete()
+        .eq('id', id)
+
+    if (error) {
+        console.log(error)
+        throw new Error("Não foi possível excluir a cabine");
     }
 
     return data;
