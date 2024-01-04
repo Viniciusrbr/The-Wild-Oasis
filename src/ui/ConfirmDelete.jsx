@@ -20,21 +20,25 @@ const StyledConfirmDelete = styled.div`
   }
 `;
 
-function ConfirmDelete({ resourceName, onConfirm, disabled }) {
+function ConfirmDelete({ resourceName, onConfirm, disabled, onCloseModal }) {
   return (
     <StyledConfirmDelete>
-      <Heading as="h3">Delete {resourceName}</Heading>
+      <Heading as="h3">Excluir {resourceName}</Heading>
       <p>
-        Are you sure you want to delete this {resourceName} permanently? This
-        action cannot be undone.
+        Tem certeza de que deseja excluir essa {resourceName} permanentemente?
+        Essa ação não pode ser desfeita.
       </p>
 
       <div>
-        <Button variation="secondary" disabled={disabled}>
-          Cancel
+        <Button
+          variation="secondary"
+          disabled={disabled}
+          onClick={onCloseModal}
+        >
+          Cancelar
         </Button>
-        <Button variation="danger" disabled={disabled}>
-          Delete
+        <Button variation="danger" disabled={disabled} onClick={onConfirm}>
+          Excluir
         </Button>
       </div>
     </StyledConfirmDelete>
