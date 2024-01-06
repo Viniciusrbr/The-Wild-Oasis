@@ -1,6 +1,19 @@
 import { getToday } from "../utils/helpers";
 import supabase from "./supabase";
 
+export async function getBookings() {
+  const { data, error } = await supabase
+    .from("bookings")
+    .select("id, created_at, startDate, endDate, numNights, numGuests, status, totalPrice, cabins(name), guests(fullName, email)")
+
+
+  if (error) {
+    console.error(error);
+    throw new Error("Não foi possível carregar as reservas");
+  }
+  return data;
+}
+
 export async function getBooking(id) {
   const { data, error } = await supabase
     .from("bookings")
@@ -26,7 +39,7 @@ export async function getBookingsAfterDate(date) {
 
   if (error) {
     console.error(error);
-    throw new Error("Bookings could not get loaded");
+    throw new Error("Não foi possível carregar as reservas");
   }
 
   return data;
@@ -43,7 +56,7 @@ export async function getStaysAfterDate(date) {
 
   if (error) {
     console.error(error);
-    throw new Error("Bookings could not get loaded");
+    throw new Error("Não foi possível carregar as reservas");
   }
 
   return data;
@@ -65,7 +78,7 @@ export async function getStaysTodayActivity() {
 
   if (error) {
     console.error(error);
-    throw new Error("Bookings could not get loaded");
+    throw new Error("Não foi possível carregar as reservas");
   }
   return data;
 }
@@ -80,7 +93,7 @@ export async function updateBooking(id, obj) {
 
   if (error) {
     console.error(error);
-    throw new Error("Booking could not be updated");
+    throw new Error("Não foi possível atualizar a reserva");
   }
   return data;
 }
@@ -91,7 +104,7 @@ export async function deleteBooking(id) {
 
   if (error) {
     console.error(error);
-    throw new Error("Booking could not be deleted");
+    throw new Error("Não foi possível excluir a reserva");
   }
   return data;
 }
