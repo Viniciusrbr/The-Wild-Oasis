@@ -3,10 +3,10 @@ import Table from "../../ui/Table";
 import Menus from "../../ui/Menus";
 import Empty from "../../ui/Empty";
 import Spinner from "../../ui/Spinner";
-import { useBooking } from "./useBookings";
+import { useBookings } from "./useBookings";
 
 function BookingTable() {
-  const { bookings=[], isLoading, count } = useBooking();
+  const { bookings=[], isLoading, count } = useBookings();
 
   if (isLoading) return <Spinner />;
 
