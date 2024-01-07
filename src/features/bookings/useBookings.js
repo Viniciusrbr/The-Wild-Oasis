@@ -8,13 +8,19 @@ export function useBookings() {
     // FILTER
     const filterValue = searchParams.get("status");
     const filter = !filterValue || filterValue === "all" ? null : { field: "status", value: filterValue };
+
+    // SORT
+    const sorByRaw = searchParams.get('sortBy') || 'startDate-desc';
+    const [field, direction] = sorByRaw.split('-');
+    const sortBy = { field, direction };
+
     const {
         isLoading,
         data: bookings,
         error,
     } = useQuery({
-        queryKey: ["bookings", filter],
-        queryFn: () => getBookings({ filter }),
+        queryKey: ["bookings", filter, sortBy],
+        queryFn: () => getBookings({ filter, sortBy }),
     });
     return {
         isLoading,

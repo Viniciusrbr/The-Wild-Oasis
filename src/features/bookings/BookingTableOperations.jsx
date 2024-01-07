@@ -17,8 +17,8 @@ function BookingTableOperations() {
 
       <SortBy
         options={[
-          { value: "startDate-desc", label: "Classificar por data (recente primeiro)" },
-          { value: "startDate-asc", label: "Classificar por data (anterior primeiro)" },
+          { value: "startDate-desc", label: "Classificar por data (mais recentes primeiro)" },
+          { value: "startDate-asc", label: "Classificar por data (mais antigas primeiro)" },
           { value: "totalPrice-desc", label: "Classificar por preço (maior primeiro)" },
           { value: "totalPrice-asc", label: "Classificar por preço (menor primeiro)" },
         ]}
