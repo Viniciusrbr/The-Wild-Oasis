@@ -7,7 +7,7 @@
     <li>“The Wild Oasis” é um pequeno <strong>hotel</strong> boutique com 8 luxuosas cabanas de madeira.
     </li>
     <li>Eles precisam de um aplicativo personalizado para gerenciar tudo sobre o hotel:<strong> reservas, cabines e
-            convidados.</strong>
+            hóspedes.</strong>
     </li>
     <li>Este é o <strong>aplicativo interno</strong> usado dentro do hotel para fazer check-in dos hóspedes
         <strong>assim que eles chegarem</strong>.
@@ -81,7 +81,7 @@
             </td>
         </tr>
         <tr>
-            <td>Convidados</td>
+            <td>hóspedes</td>
             <td>
                 <ol>
                     <li>Os dados do hóspede devem conter: nome completo, e-mail, documento de identidade nacional,
