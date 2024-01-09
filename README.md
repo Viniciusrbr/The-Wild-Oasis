@@ -46,9 +46,9 @@
             <td>Cabines</td>
             <td>
                 <ol>
-                    <li>O aplicativo precisa de uma tabela com todas as cabines, mostrando a foto da cabine, nome,
+                    <li>✅O aplicativo precisa de uma tabela com todas as cabines, mostrando a foto da cabine, nome,
                         capacidade, preço e desconto atual.</li>
-                    <li>Os usuários devem poder atualizar ou excluir uma cabine e criar novas cabines (incluindo o
+                    <li>✅Os usuários devem poder atualizar ou excluir uma cabine e criar novas cabines (incluindo o
                         upload de uma foto).</li>
                 </ol>
             </td>
@@ -57,11 +57,11 @@
             <td>Reservas</td>
             <td>
                 <ol>
-                    <li>O aplicativo precisa de uma tabela com todas as reservas, mostrando datas de chegada e saída,
+                    <li>✅O aplicativo precisa de uma tabela com todas as reservas, mostrando datas de chegada e saída,
                         status e valor pago, bem como dados da cabine e dos hóspedes.</li>
-                    <li>O status da reserva pode ser “não confirmado” (reservada mas ainda não com check-in), “check-in”
+                    <li>✅O status da reserva pode ser “não confirmado” (reservada mas ainda não com check-in), “check-in”
                         ou “check-out”. A tabela deve ser filtrável por este importante status.</li>
-                    <li>Outros dados de reserva incluem: número de hóspedes, número de noites, observações dos hóspedes,
+                    <li>✅Outros dados de reserva incluem: número de hóspedes, número de noites, observações dos hóspedes,
                         se reservaram o pequeno-almoço, preço do pequeno-almoço.</li>
                 </ol>
             </td>
@@ -70,12 +70,12 @@
             <td>Check-in / Out</td>
             <td>
                 <ol>
-                    <li>Os usuários devem poder excluir, fazer check-in ou check-out de uma reserva assim que o hóspede
+                    <li>✅Os usuários devem poder excluir, fazer check-in ou check-out de uma reserva assim que o hóspede
                         chegar (sem necessidade de edição por enquanto).</li>
-                    <li>As reservas podem ainda não ter sido pagas na chegada do hóspede. Portanto, no check in, o
+                    <li>✅As reservas podem ainda não ter sido pagas na chegada do hóspede. Portanto, no check in, o
                         usuário precisa aceitar o pagamento (fora do app), e em seguida, confirme se o pagamento foi
                         recebido (dentro do aplicativo).</li>
-                    <li>No momento do check in, o hóspede deverá ter a possibilidade de adicionar café da manhã para
+                    <li>✅No momento do check in, o hóspede deverá ter a possibilidade de adicionar café da manhã para
                         toda a estadia, caso ainda não o tenha feito.</li>
                 </ol>
             </td>
@@ -84,7 +84,7 @@
             <td>hóspedes</td>
             <td>
                 <ol>
-                    <li>Os dados do hóspede devem conter: nome completo, e-mail, documento de identidade nacional,
+                    <li>✅Os dados do hóspede devem conter: nome completo, e-mail, documento de identidade nacional,
                         nacionalidade e bandeira do país para fácil identificação.</li>
                 </ol>
             </td>
@@ -111,7 +111,7 @@
             <td>Configurações</td>
             <td>
                 <ol>
-                    <li>Os usuários devem ser capazes de definir algumas configurações em todo o aplicativo: preço do
+                    <li>✅Os usuários devem ser capazes de definir algumas configurações em todo o aplicativo: preço do
                         café da manhã, mínimo e máximo de noites/reserva, máximo de hóspedes/reserva.</li>
                 </ol>
             </td>
