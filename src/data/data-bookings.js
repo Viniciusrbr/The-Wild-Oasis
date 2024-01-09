@@ -16,7 +16,7 @@ export const bookings = [
     guestId: 2,
     hasBreakfast: true,
     observations:
-      'I have a gluten allergy and would like to request a gluten-free breakfast.',
+      'Eu tenho alergia ao glúten e gostaria de solicitar um café da manhã sem glúten.',
     isPaid: false,
     numGuests: 1,
   },
@@ -97,7 +97,7 @@ export const bookings = [
     cabinId: 3,
     guestId: 9,
     hasBreakfast: false,
-    observations: 'We will be bringing our small dog with us',
+    observations: 'Vamos trazer nosso cachorro pequeno conosco',
     isPaid: true,
     numGuests: 3,
   },
@@ -192,7 +192,7 @@ export const bookings = [
     guestId: 17,
     hasBreakfast: false,
     observations:
-      "We will be checking in late, around midnight. Hope that's okay :)",
+      "Faremos o check-in tarde, por volta da meia-noite. Espero que esteja tudo bem :)",
     isPaid: true,
     numGuests: 6,
   },
@@ -203,7 +203,7 @@ export const bookings = [
     cabinId: 6,
     guestId: 18,
     hasBreakfast: true,
-    observations: 'I will need a rollaway bed for one of the guests',
+    observations: 'Vou precisar de uma cama dobrável para um dos hóspedes',
     isPaid: true,
     numGuests: 4,
   },
@@ -263,7 +263,7 @@ export const bookings = [
     guestId: 1,
     hasBreakfast: true,
     observations:
-      'My wife has a gluten allergy so I would like to request a gluten-free breakfast if possible',
+      'Minha esposa tem alergia ao glúten, então gostaria de solicitar um café da manhã sem glúten, se possível',
     isPaid: true,
     numGuests: 9,
   },
@@ -275,7 +275,7 @@ export const bookings = [
     guestId: 23,
     hasBreakfast: true,
     observations:
-      'I am celebrating my anniversary, can you arrange for any special amenities or decorations?',
+      'Estou comemorando meu aniversário. Você pode providenciar alguma comodidade ou decoração especial?',
     isPaid: true,
     numGuests: 10,
   },
