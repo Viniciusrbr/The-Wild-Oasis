@@ -16,7 +16,7 @@ export function useCheckin() {
             }),
 
         onSuccess: (data) => {
-            toast.success(`Check-in da da reserva #${data.id} feito com sucesso`);
+            toast.success(`Check-in da reserva #${data.id} feito com sucesso`);
             queryClient.invalidateQueries({ active: true });
             navigate("/");
         },
