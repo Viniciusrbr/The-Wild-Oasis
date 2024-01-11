@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { format, isToday } from "date-fns";
+import { ptBR } from "date-fns/locale";
+
 import {
   HiOutlineChatBubbleBottomCenterText,
   HiOutlineCheckCircle,
@@ -130,11 +132,17 @@ function BookingDataBox({ booking }) {
         </div>
 
         <p>
-          {format(new Date(startDate), "EEE, MMM dd yyyy")} (
+          {format(new Date(startDate), "EEE, d 'de' MMM 'de' yyyy", {
+            locale: ptBR,
+          })}{" "}
+          (
           {isToday(new Date(startDate))
-            ? "Today"
+            ? "Hoje"
             : formatDistanceFromNow(startDate)}
-          ) &mdash; {format(new Date(endDate), "EEE, MMM dd yyyy")}
+          ) &mdash; 
+          {format(new Date(endDate), " EEE, d 'de' MMM 'de' yyyy", {
+            locale: ptBR,
+          })}
         </p>
       </Header>
 
@@ -144,12 +152,12 @@ function BookingDataBox({ booking }) {
             <Flag src={countryFlag} alt={`Bandeira da ${country}`} />
           )}
           <p>
-            {guestName} {numGuests > 1 ? `+ ${numGuests - 1} guests` : ""}
+            {guestName} {numGuests > 1 ? `+ ${numGuests - 1} convidado(os)` : ""}
           </p>
           <span>&bull;</span>
           <p>{email}</p>
           <span>&bull;</span>
-          <p>National ID {nationalID}</p>
+          <p>identidade nacional: {nationalID}</p>
         </Guest>
 
         {observations && (
@@ -173,9 +181,9 @@ function BookingDataBox({ booking }) {
             {formatCurrency(totalPrice)}
 
             {hasBreakfast &&
-              ` (${formatCurrency(cabinPrice)} cabin + ${formatCurrency(
+              ` (${formatCurrency(cabinPrice)} cabine + ${formatCurrency(
                 extrasPrice
-              )} breakfast)`}
+              )} café da manhã)`}
           </DataItem>
 
           <p>{isPaid ? "Pago" : "Pagará no local"}</p>
@@ -183,7 +191,12 @@ function BookingDataBox({ booking }) {
       </Section>
 
       <Footer>
-        <p>Booked {format(new Date(created_at), "EEE, MMM dd yyyy, p")}</p>
+        <p>
+          Reservado{" "}
+          {format(new Date(created_at), "EEE, d 'de' MMMM 'de' yyyy, p", {
+            locale: ptBR,
+          })}
+        </p>
       </Footer>
     </StyledBookingDataBox>
   );

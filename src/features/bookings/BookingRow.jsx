@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { format, isToday } from "date-fns";
+import { ptBR } from "date-fns/locale";
 import { useNavigate } from "react-router-dom";
 
 import {
@@ -72,6 +73,12 @@ function BookingRow({
     "checked-out": "silver",
   };
 
+  const statusToPortuguese = {
+    unconfirmed: "não confirmado",
+    "checked-in": "check-in",
+    "checked-out": "check-out",
+  };
+
   return (
     <Table.Row>
       <Cabin>{cabinName}</Cabin>
@@ -84,17 +91,24 @@ function BookingRow({
       <Stacked>
         <span>
           {isToday(new Date(startDate))
-            ? "Today"
+            ? "Hoje"
             : formatDistanceFromNow(startDate)}{" "}
-          &rarr; {numNights} night stay
+          &rarr; {numNights} noites
         </span>
         <span>
-          {format(new Date(startDate), "MMM dd yyyy")} &mdash;{" "}
-          {format(new Date(endDate), "MMM dd yyyy")}
+          {format(new Date(startDate), "dd 'de' MMM 'de' yyyy", {
+            locale: ptBR,
+          })}{" "}
+          &mdash;{" "}
+          {format(new Date(endDate), "dd 'de' MMM 'de' yyyy", {
+            locale: ptBR,
+          })}
         </span>
       </Stacked>
 
-      <Tag type={statusToTagName[status]}>{status.replace("-", " ")}</Tag>
+      <Tag type={statusToTagName[status]}>
+        {statusToPortuguese[status].replace("-", " ")}
+      </Tag>
 
       <Amount>{formatCurrency(totalPrice)}</Amount>
 

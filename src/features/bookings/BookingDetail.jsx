@@ -43,12 +43,18 @@ function BookingDetail() {
     "checked-out": "silver",
   };
 
+  const statusToPortuguese = {
+    unconfirmed: "não confirmado",
+    "checked-in": "check-in",
+    "checked-out": "check-out",
+  };
+
   return (
     <>
       <Row type="horizontal">
         <HeadingGroup>
           <Heading as="h1">Reserva #{bookingId}</Heading>
-          <Tag type={statusToTagName[status]}>{status.replace("-", " ")}</Tag>
+          <Tag type={statusToTagName[status]}>{statusToPortuguese[status].replace("-", " ")}</Tag>
         </HeadingGroup>
         <ButtonText onClick={moveBack}>&larr; Voltar</ButtonText>
       </Row>
@@ -81,9 +87,11 @@ function BookingDetail() {
             <ConfirmDelete
               resourceName="reserva"
               disabled={isDeleting}
-              onConfirm={() => deleteBooking(bookingId,{
-                onSettled: () => navigate(-1),
-              })}
+              onConfirm={() =>
+                deleteBooking(bookingId, {
+                  onSettled: () => navigate(-1),
+                })
+              }
             />
           </Modal.Window>
         </Modal>
