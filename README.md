@@ -34,11 +34,11 @@
             <td>Autenticação</td>
             <td>
                 <ol>
-                    <li>Os usuários do aplicativo são funcionários do hotel. Eles precisam estar logados no aplicativo
+                    <li>✅Os usuários do aplicativo são funcionários do hotel. Eles precisam estar logados no aplicativo
                         para realizar tarefas.</li>
-                    <li>Novos usuários só podem ser cadastrados dentro dos aplicativos (para garantir que apenas
+                    <li>✅Novos usuários só podem ser cadastrados dentro dos aplicativos (para garantir que apenas
                         funcionários reais do hotel possam obter contas).</li>
-                    <li>Os usuários devem poder fazer upload de um avatar e alterar seu nome e senha.</li>
+                    <li>✅Os usuários devem poder fazer upload de um avatar e alterar seu nome e senha.</li>
                 </ol>
             </td>
         </tr>

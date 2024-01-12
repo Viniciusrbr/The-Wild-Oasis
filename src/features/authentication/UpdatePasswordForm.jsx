@@ -19,7 +19,7 @@ function UpdatePasswordForm() {
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
       <FormRow
-        label="Password (min 8 characters)"
+        label="Nova senha (mín. 8 caracteres)"
         error={errors?.password?.message}
       >
         <Input
@@ -28,17 +28,17 @@ function UpdatePasswordForm() {
           autoComplete="current-password"
           disabled={isUpdating}
           {...register("password", {
-            required: "This field is required",
+            required: "Este campo é obrigatório",
             minLength: {
               value: 8,
-              message: "Password needs a minimum of 8 characters",
+              message: "A senha precisa de no mínimo 8 caracteres",
             },
           })}
         />
       </FormRow>
 
       <FormRow
-        label="Confirm password"
+        label="Confirme sua senha"
         error={errors?.passwordConfirm?.message}
       >
         <Input
@@ -47,17 +47,18 @@ function UpdatePasswordForm() {
           id="passwordConfirm"
           disabled={isUpdating}
           {...register("passwordConfirm", {
-            required: "This field is required",
+            required: "Este campo é obrigatório",
             validate: (value) =>
-              getValues().password === value || "Passwords need to match",
+              getValues().password === value ||
+              "As senhas precisam corresponder",
           })}
         />
       </FormRow>
       <FormRow>
         <Button onClick={reset} type="reset" variation="secondary">
-          Cancel
+          Cancelar
         </Button>
-        <Button disabled={isUpdating}>Update password</Button>
+        <Button disabled={isUpdating}>Atualizar senha</Button>
       </FormRow>
     </Form>
   );
