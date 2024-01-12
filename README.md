@@ -120,7 +120,7 @@
             <td>Outros</td>
             <td>
                 <ol>
-                    <li>O aplicativo precisa de um modo escuro.</li>
+                    <li>✅O aplicativo precisa de um modo escuro.</li>
                 </ol>
             </td>
         </tr>
