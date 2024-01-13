@@ -93,15 +93,15 @@
             <td>Dashboard</td>
             <td>
                 <ol>
-                    <li>A tela inicial do aplicativo deve ser um painel, para exibir informações importantes dos últimos
+                    <li>✅A tela inicial do aplicativo deve ser um painel, para exibir informações importantes dos últimos
                         7, 30 ou 90 dias:</li>
                     <ol>
                         <li>Uma lista de hóspedes que farão check-in e check-out no dia atual. Os usuários devem ser
                             capazes de realizar essas tarefas aqui.</li>
-                        <li>Estatísticas sobre reservas recentes, vendas, check-ins e taxa de ocupação.</li>
-                        <li>Um gráfico que mostra todas as vendas diárias do hotel, mostrando tanto as vendas “totais”
+                        <li>✅Estatísticas sobre reservas recentes, vendas, check-ins e taxa de ocupação.</li>
+                        <li>✅Um gráfico que mostra todas as vendas diárias do hotel, mostrando tanto as vendas “totais”
                             como as vendas “extras” (apenas café da manhã no momento).</li>
-                        <li>Um gráfico que mostra estatísticas sobre a duração da estadia, pois esta é uma métrica
+                        <li>✅Um gráfico que mostra estatísticas sobre a duração da estadia, pois esta é uma métrica
                             importante para o hotel.</li>
                     </ol>
                 </ol>
