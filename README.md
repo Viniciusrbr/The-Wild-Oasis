@@ -96,7 +96,7 @@
                     <li>✅A tela inicial do aplicativo deve ser um painel, para exibir informações importantes dos últimos
                         7, 30 ou 90 dias:</li>
                     <ol>
-                        <li>Uma lista de hóspedes que farão check-in e check-out no dia atual. Os usuários devem ser
+                        <li>✅Uma lista de hóspedes que farão check-in e check-out no dia atual. Os usuários devem ser
                             capazes de realizar essas tarefas aqui.</li>
                         <li>✅Estatísticas sobre reservas recentes, vendas, check-ins e taxa de ocupação.</li>
                         <li>✅Um gráfico que mostra todas as vendas diárias do hotel, mostrando tanto as vendas “totais”
