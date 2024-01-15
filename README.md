@@ -31,6 +31,9 @@
     <li>Outros: Supabase, recharts, date-fns, react icons, etc...</li>
 </ul>
 
+<h3>❗ATENÇÃO❗</h3>
+<p>➡️ Se você deseja testar o projeto <strong>é preciso ter uma conta criada para acessar a plataforma.</strong> Se essa for a sua vontade, envie um email para viniciusgoes159@gmail.com solicitando um login e senha. 😉</p>
+
 <h3>🎯 Requisitos:</h3>
 
 <table>
