@@ -1,5 +1,7 @@
 # The Wild Oasis 🏨
 
+![dashboard-tela-inicial](previa.png)
+
 <h3>🙋🏻‍♀️ Contextualização</h3>
 
 <ul>
