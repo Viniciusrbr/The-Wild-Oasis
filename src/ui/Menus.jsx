@@ -88,6 +88,8 @@ function Toggle({ id }) {
 
   // se nem um menu estiver aberto ou se o menu aberto for diferente do id do menu clicado, abre o menu, senão fecha o menu
   function handleClick(e) {
+    e.stopPropagation();
+
     const rect = e.target.closest("button").getBoundingClientRect(); // pega a posição do botão clicado
     setPosition({
       x: window.innerWidth - rect.width - rect.x,
@@ -106,7 +108,7 @@ function Toggle({ id }) {
 
 function List({ id, children }) {
   const { openId, position, close } = useContext(MenusContext);
-  const ref = useOutsideClick(close);
+  const ref = useOutsideClick(close, false);
 
   if (openId !== id) return null;
 

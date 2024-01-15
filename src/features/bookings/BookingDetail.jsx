@@ -17,6 +17,7 @@ import { useMoveBack } from "../../hooks/useMoveBack";
 import { useBooking } from "./UseBooking";
 import { useDeleteBooking } from "./useDeleteBooking";
 import { useCheckout } from "../check-in-out/useCheckout";
+import Empty from "../../ui/Empty";
 
 const HeadingGroup = styled.div`
   display: flex;
@@ -34,6 +35,7 @@ function BookingDetail() {
   const moveBack = useMoveBack();
 
   if (isLoading) return <Spinner />;
+  if (!booking) return <Empty resourceName="reserva" />;
 
   const { status, id: bookingId } = booking;
 
@@ -54,7 +56,9 @@ function BookingDetail() {
       <Row type="horizontal">
         <HeadingGroup>
           <Heading as="h1">Reserva #{bookingId}</Heading>
-          <Tag type={statusToTagName[status]}>{statusToPortuguese[status].replace("-", " ")}</Tag>
+          <Tag type={statusToTagName[status]}>
+            {statusToPortuguese[status].replace("-", " ")}
+          </Tag>
         </HeadingGroup>
         <ButtonText onClick={moveBack}>&larr; Voltar</ButtonText>
       </Row>

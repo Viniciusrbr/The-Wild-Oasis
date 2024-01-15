@@ -1,6 +1,5 @@
 # The Wild Oasis 🏨
 
-<p>⏳🙂 Projeto ainda em construção...</p>
 <h3>🙋🏻‍♀️ Contextualização</h3>
 
 <ul>
@@ -18,6 +17,18 @@
         também, onde eles poderão reservar estadias, usando a mesma API.
     </li>
 
+</ul>
+
+<h3>🛠️ Tecnologias Utilizadas</h3>
+
+<ul>
+    <li>React </li>
+    <li>React Router</li>
+    <li>Styled Components</li>
+    <li>React Query</li>
+    <li>Context API</li>
+    <li>React Hook Form</li>
+    <li>Outros: Supabase, recharts, date-fns, react icons, etc...</li>
 </ul>
 
 <h3>🎯 Requisitos:</h3>
